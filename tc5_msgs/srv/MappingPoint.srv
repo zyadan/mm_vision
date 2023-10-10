@@ -1,0 +1,17 @@
+uint8 INITIAL = 0 # "initial" means initial the capturing point
+uint8 START = 1 # "capturing" means capturing follwing the capturing point given by vision
+uint8 END = 2 # "end" means the last capturing point
+uint8 CAPTURE = 3 # "start" means the first capture
+
+
+# Upper left point and bottom right point of operating area
+geometry_msgs/Point ptlu
+geometry_msgs/Point ptbr
+
+uint8 flag  
+             
+---
+
+bool success   # indicate  capture successfully
+bool finish   # indicate finishing the capture
+geometry_msgs/Pose nextpose  #next pose with respect to the previous point 

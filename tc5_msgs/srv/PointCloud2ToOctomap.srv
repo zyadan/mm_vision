@@ -1,0 +1,8 @@
+
+sensor_msgs/PointCloud2 wall_point
+
+
+---
+
+octomap_msgs/Octomap octomap
+
